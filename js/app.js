@@ -2,13 +2,21 @@ $(document).ready(function(){
   $('form').submit(function(event) {
     event.preventDefault();
     var gameGuess = $('#userGuess').val();
-    fizzBuzz(gameGuess);
+    //fizzBuzz(gameGuess);
   });
+generateNumber();
+
+    function generateNumber() {
+    var x = Math.floor((Math.random() * 100) + 1);
+    console.log(x);
+  }
 
     // function testFunction(x, y) {
     //  return x + y;
     // }
     // console.log(testFunction(5, 10));
+
+
 
   function fizzBuzz(max) {
     console.log(max);
@@ -43,9 +51,7 @@ $(document).ready(function(){
 
   // }
 
-  // function generateNumber() {
-  //   var secretNumber = Math.floor((Math.random() * 100) + 1);
-  // }
+
 
 
 	/*--- Display information modal box ---*/
